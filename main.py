@@ -4,6 +4,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+@app.get("/check_health")
+def check_health():
+    return {"API": "Up and Running!"}
